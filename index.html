@@ -1,83 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Kalendarz Mamy 60zł/h Biłgoraj</title>
+<h2>📅 Rezerwacja Zajęć Pedagogika - 60zł/h</h2>
+<p>Wybierz godzinę i kliknij "ZAREZERWUJ SMS". Mama potwierdzi telefonicznie!</p>
+
 <style>
-body { font-family: Arial; background: #fff5f5; padding: 20px; text-align: center; margin: 0; }
-h1 { color: #d32f2f; font-size: 32px; margin-bottom: 10px; }
-p { color: #666; font-size: 18px; }
-.kalendarz { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; max-width: 900px; margin: 30px auto; }
-.dzien { border: 3px solid #ddd; border-radius: 15px; padding: 20px 10px; background: white; cursor: pointer; position: relative; transition: 0.3s; min-height: 100px; }
-.dzien:hover { transform: scale(1.1); box-shadow: 0 10px 30px rgba(211,47,47,0.6); border-color: #d32f2f; z-index: 10; }
-.nazwa { font-weight: bold; color: #d32f2f; font-size: 20px; margin-bottom: 8px; }
-.zajety { background: #ffebee; border-color: #f44336; }
-.wolny { background: #e8f5e9; border-color: #4caf50; }
-.mieszany { background: #fff3e0; border-color: #ff9800; }
-.godziny { display: none; position: absolute; top: 110%; left: 50%; transform: translateX(-50%); background: white; border: 3px solid #d32f2f; border-radius: 15px; padding: 15px; z-index: 999; width: 240px; box-shadow: 0 8px 25px rgba(0,0,0,0.5); text-align: left; font-size: 17px; }
-.dzien:hover .godziny { display: block; }
-.g-zajeta { color: #f44336; font-weight: bold; padding: 5px 0; }
-.g-wolna { color: #4caf50; font-weight: bold; font-size: 19px; padding: 5px 0; }
-.stopka { margin-top: 50px; color: #999; }
+.slot {border:2px solid #4CAF50; padding:15px; margin:8px; border-radius:10px; text-align:center; font-family:Arial;}
+.slot h3 {margin:0; color:#2E7D32;}
+.btn-sms {background:#25D366; color:white; padding:12px 25px; border:none; border-radius:8px; font-size:16px; font-weight:bold; cursor:pointer; text-decoration:none; display:inline-block; margin-top:10px;}
+.btn-sms:hover {background:#1EBE57;}
+.day {margin-top:25px; border-top:3px solid #4CAF50; padding-top:15px;}
 </style>
-</head>
-<body>
-<h1>🔥 Kalendarz Rezerwacji Mamy - 60zł/h 🔥</h1>
-<p>Najeżdżasz na dzień i widzisz godziny! Klikasz i dzwonisz!</p>
 
-<div class="kalendarz">
-  
-  <div class="dzien zajety">
-    <div class="nazwa">Pon 16.06</div>
-    <div>CAŁY ZAJĘTY</div>
-    <div class="godziny">
-      <div class="g-zajeta">10:00 ZAJĘTE</div>
-      <div class="g-zajeta">12:00 ZAJĘTE</div>
-      <div class="g-zajeta">14:00 ZAJĘTE</div>
-      <div class="g-zajeta">16:00 ZAJĘTE</div>
-    </div>
-  </div>
-
-  <div class="dzien mieszany">
-    <div class="nazwa">Śr 18.06</div>
-    <div>2 WOLNE</div>
-    <div class="godziny">
-      <div class="g-zajeta">10:00 ZAJĘTE</div>
-      <div class="g-wolna">11:00 WOLNE 60zł!</div>
-      <div class="g-zajeta">14:00 ZAJĘTE</div>
-      <div class="g-wolna">15:00 WOLNE 60zł!</div>
-    </div>
-  </div>
-
-  <div class="dzien wolny">
-    <div class="nazwa">Czw 19.06</div>
-    <div>WOLNY DZIEŃ</div>
-    <div class="godziny">
-      <div class="g-wolna">10:00 WOLNE 60zł!</div>
-      <div class="g-wolna">12:00 WOLNE 60zł!</div>
-      <div class="g-wolna">14:00 WOLNE 60zł!</div>
-      <div class="g-wolna">16:00 WOLNE 60zł!</div>
-    </div>
-  </div>
-
-  <div class="dzien zajety">
-    <div class="nazwa">Pt 20.06</div>
-    <div>ZAJĘTY</div>
-    <div class="godziny">
-      <div class="g-zajeta">9:00 ZAJĘTE</div>
-      <div class="g-zajeta">11:00 ZAJĘTE</div>
-      <div class="g-zajeta">15:00 ZAJĘTE</div>
-    </div>
-  </div>
-
+<div class="day"><h3>PONIEDZIAŁEK</h3>
+<div class="slot"><h3>8:00 - 9:00</h3><a class="btn-sms" href="sms:123456789?body=Dzień dobry, z tej strony ___ zarezerwowane na poniedziałek o 8:00. Proszę o potwierdzenie. Pedagogika 60zł/h">ZAREZERWUJ SMS</a></div>
+<div class="slot"><h3>9:00 - 10:00</h3><a class="btn-sms" href="sms:123456789?body=Dzień dobry, z tej strony ___ zarezerwowane na poniedziałek o 9:00. Proszę o potwierdzenie. Pedagogika 60zł/h">ZAREZERWUJ SMS</a></div>
+<div class="slot"><h3>10:00 - 11:00</h3><a class="btn-sms" href="sms:123456789?body=Dzień dobry, z tej strony ___ zarezerwowane na poniedziałek o 10:00. Proszę o potwierdzenie. Pedagogika 60zł/h">ZAREZERWUJ SMS</a></div>
+<div class="slot"><h3>11:00 - 12:00</h3><a class="btn-sms" href="sms:123456789?body=Dzień dobry, z tej strony ___ zarezerwowane na poniedziałek o 11:00. Proszę o potwierdzenie. Pedagogika 60zł/h">ZAREZERWUJ SMS</a></div>
+<div class="slot"><h3>12:00 - 13:00</h3><a class="btn-sms" href="sms:123456789?body=Dzień dobry, z tej strony ___ zarezerwowane na poniedziałek o 12:00. Proszę o potwierdzenie. Pedagogika 60zł/h">ZAREZERWUJ SMS</a></div>
+<div class="slot"><h3>13:00 - 14:00</h3><a class="btn-sms" href="sms:123456789?body=Dzień dobry, z tej strony ___ zarezerwowane na poniedziałek o 13:00. Proszę o potwierdzenie. Pedagogika 60zł/h">ZAREZERWUJ SMS</a></div>
+<div class="slot"><h3>14:00 - 15:00</h3><a class="btn-sms" href="sms:123456789?body=Dzień dobry, z tej strony ___ zarezerwowane na poniedziałek o 14:00. Proszę o potwierdzenie. Pedagogika 60zł/h">ZAREZERWUJ SMS</a></div>
+<div class="slot"><h3>15:00 - 16:00</h3><a class="btn-sms" href="sms:123456789?body=Dzień dobry, z tej strony ___ zarezerwowane na poniedziałek o 15:00. Proszę o potwierdzenie. Pedagogika 60zł/h">ZAREZERWUJ SMS</a></div>
+<div class="slot"><h3>16:00 - 17:00</h3><a class="btn-sms" href="sms:123456789?body=Dzień dobry, z tej strony ___ zarezerwowane na poniedziałek o 16:00. Proszę o potwierdzenie. Pedagogika 60zł/h">ZAREZERWUJ SMS</a></div>
 </div>
 
-<div class="stopka">
-<p>Biłgoraj 2026 | Rezerwacje: 500-XXX-XXX</p>
-<p>Mama zarabia 60zł/h 💰</p>
+<div class="day"><h3>WTOREK</h3>
+<div class="slot"><h3>8:00 - 9:00</h3><a class="btn-sms" href="sms:123456789?body=Dzień dobry, z tej strony ___ zarezerwowane na wtorek o 8:00. Proszę o potwierdzenie. Pedagogika 60zł/h">ZAREZERWUJ SMS</a></div>
+<div class="slot"><h3>9:00 - 10:00</h3><a class="btn-sms" href="sms:123456789?body=Dzień dobry, z tej strony ___ zarezerwowane na wtorek o 9:00. Proszę o potwierdzenie. Pedagogika 60zł/h">ZAREZERWUJ SMS</a></div>
+<!-- Skopiuj blok powyżej i zmień dzień+godzinę dla Śr, Czw, Pt -->
 </div>
-</body>
-</html>
+
+<p style="margin-top:30px; font-size:14px; color:gray;">* Po kliknięciu wpisz tylko imię i nazwisko w miejsce ___ i wyślij SMS</p
 
 
 
